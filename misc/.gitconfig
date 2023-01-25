@@ -1,0 +1,12 @@
+1   [init]¬                                                                                                                                       
+  1 ▸   templatedir = /home/pi/.crbcs/git¬
+  2 [user]¬
+  3 ▸   email = guilliano.vandinther@ictmbo.nl¬
+  4 ▸   name = Guilliano van Dinther¬
+  5 ▸   signingkey = guilliano.vandinther@ictmbo.nl¬
+  6 [commit]¬
+  7 ▸   gpgsign = true¬
+  8 [tag]¬
+  9 ▸   gpgsign = true¬
+ 10 [gpg]¬
+ 11 ▸   program = gpg¬
