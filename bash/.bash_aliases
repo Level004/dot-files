@@ -24,7 +24,7 @@ alias database="mysql -ularavel -p"
 alias nginxr="sudo systemctl restart nginx"
 alias nginxs="sudo systemctl status nginx"
 alias ubuntu="ssh ubuntu-stage"
-alias dot="cd **/dot-files"
+alias dot="cd $HOME/**/dot-files"
 
 # extra aliases
 # This is for non-general aliases that only work on a spesific OS
