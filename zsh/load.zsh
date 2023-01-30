@@ -1,5 +1,5 @@
 # To enable a module: true, Disable: Leave empty
-PHP=ture
+PHP=true
 PYTHON=
 
 LARAVEL=true
