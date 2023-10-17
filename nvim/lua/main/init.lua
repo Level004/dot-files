@@ -1,2 +1,2 @@
 require("main.remap")
-print("hello")
+require("main.set")
