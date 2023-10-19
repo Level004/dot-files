@@ -102,7 +102,10 @@ if [ -f ~/.bash_extra ]; then
     . ~/.bash_extra
 fi
 
-alias nvim="winpty nvim"
+if [ -t 1 ]; then
+  exec zsh
+fi
+
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
