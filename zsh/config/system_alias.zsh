@@ -1,6 +1,23 @@
 # -------------------------------------------------------------------
 # ZSH
 # -------------------------------------------------------------------
+
+#git related aliases
+alias gitcm="git commit -m"
+alias gitch="git checkout"
+alias gp="git push"
+alias ga="git add"
+alias gst="git status"
+alias gd="git diff"
+alias gds="git diff --staged"
+alias gdch="git -c core.fileMode=false diff"
+alias glgp="git log --stat --color -p"
+alias glol="git log --graph --abbrev-commit --decorate --date=relative --all"
+alias glog="git log --all --decorate --oneline --graph"
+alias glc="git log --decorate --oneline --graph --sehow-signature"
+alias gcount=" git shortlog -n -s -e"
+alias yolo='ga . && git commit -m "$(curl -s https://whatthecommit.com/index.txt)" && gp --force'
+
 alias reload='source ~/.zshrc'
 
 alias database="mysql -ularavel -p"

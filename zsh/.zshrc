@@ -7,7 +7,7 @@ export LC_ALL=en_US.UTF-8
 # -------------------------------------------------------------------
 # Set dotfile paths for easier editing.
 # -------------------------------------------------------------------
-export DOTFILES=$HOME/projects/dot-files
+export DOTFILES=$HOME/documents/code/dot-files
 export ZSH=$DOTFILES/zsh
 export MODULES=$ZSH/modules
 
@@ -31,7 +31,7 @@ source $ZSH/utils.zsh
 # -------------------------------------------------------------------
 # Load file to determine which modules are active
 # -------------------------------------------------------------------
-source $ZSH/load.zsh
+# source $ZSH/load.zsh
 
 # -------------------------------------------------------------------
 # Load config
@@ -60,7 +60,7 @@ export GPG_TTY=$(tty)
 # It must be sourced after all custom widgets have been created (i.e., after all zle -N calls and after running compinit).
 # Widgets created later will work, but will not update the syntax highlighting.
 # -------------------------------------------------------------------
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 # Enable zsh profiling for debugging
 # zprof

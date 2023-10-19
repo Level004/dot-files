@@ -30,7 +30,7 @@
 
 _z() {
 
-    local datafile="${_Z_DATA:-$HOME/.z}"
+    local datafile="${_Z_DATA:-$HOME/z-history/.z}"
 
     # if symlink, dereference
     [ -h "$datafile" ] && datafile=$(readlink "$datafile")
