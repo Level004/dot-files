@@ -8,6 +8,7 @@ require('telescope').setup{
             ".git",
             "vendor",
             ".idea",
-        }
+        },
+        path_display={"tail"}  
     }
 }
