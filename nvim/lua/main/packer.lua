@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
 	  branch = 'v3.x',
 	  requires = {
 		  --- Uncomment these if you want to manage LSP servers from neovim
-		   {'williamboman/mason.nvim'},
+          {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
 
 		  -- LSP Support
@@ -43,5 +43,9 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
+  use 'saadparwaiz1/cmp_luasnip'
+  use "rafamadriz/friendly-snippets"
+  use {'neoclide/coc.nvim', branch = 'release'}
 
 end)
