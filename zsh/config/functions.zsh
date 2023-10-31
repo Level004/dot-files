@@ -18,8 +18,8 @@ function gacp ()
     git add $1 && git commit -m "$2" && git push
 }
 
-activatefolder () 
+function activatefolder () 
 {
   local base_name=$(basename "$PWD")
-  cd "$base_name/Scripts/" && . activate && ..
+  cd "$base_name/Scripts/" && . activate && cd ..
 }

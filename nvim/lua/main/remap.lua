@@ -4,4 +4,5 @@ vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
 
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 
-vim.keymap.set("n", "<leader>rp", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>fs", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+
