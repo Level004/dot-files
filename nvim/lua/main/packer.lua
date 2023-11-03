@@ -47,5 +47,8 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use "rafamadriz/friendly-snippets"
   use {'neoclide/coc.nvim', branch = 'release'}
+  use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+      require('git-conflict').setup()
+  end}
 
 end)
