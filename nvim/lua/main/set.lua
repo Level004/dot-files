@@ -13,3 +13,5 @@ vim.opt.incsearch = true
 
 vim.opt.swapfile = false
 vim.opt.writebackup = false
+
+vim.opt.wrap = false
