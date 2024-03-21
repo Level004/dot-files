@@ -8,7 +8,11 @@ require('telescope').setup{
             ".git",
             "vendor",
             ".idea",
+            ".png",
+            ".jpg"
         },
         path_display={"tail"}  
     }
 }
+
+require("ibl").setup()

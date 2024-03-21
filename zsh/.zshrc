@@ -3,7 +3,8 @@
 
 # Set encoding
 export LC_ALL=en_US.UTF-8
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # -------------------------------------------------------------------
 # Set dotfile paths for easier editing.
 # -------------------------------------------------------------------
@@ -52,15 +53,8 @@ done
 export ALTERNATE_EDITOR="nano"
 export GPG_TTY=$(tty)
 
-# -------------------------------------------------------------------
-# Custom .zshrc source highlighting
-# see: https://github.com/zsh-users/zsh-syntax-highlighting
-# Why must zsh-syntax-highlighting.zsh be sourced at the end of the .zshrc file?
-# zsh-syntax-highlighting.zsh wraps ZLE widgets.
-# It must be sourced after all custom widgets have been created (i.e., after all zle -N calls and after running compinit).
-# Widgets created later will work, but will not update the syntax highlighting.
-# -------------------------------------------------------------------
+keep_current_path() {
+  printf "\e]9;9;%s\e\\" "$(cd "$PWD" && pwd -W)"
+}
+precmd_functions+=(keep_current_path)
 
-
-# Enable zsh profiling for debugging
-# zprof

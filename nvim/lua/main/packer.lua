@@ -51,4 +51,6 @@ return require('packer').startup(function(use)
       require('git-conflict').setup()
   end}
 
+  use "lukas-reineke/indent-blankline.nvim"
+
 end)
