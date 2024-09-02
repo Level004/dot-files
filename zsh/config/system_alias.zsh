@@ -41,3 +41,4 @@ alias search="history | grep"
 alias phpversion="sudo update-alternatives --config php"
 
 alias makevenv="python -m venv venv"
+alias phpversion="sudo update-alternatives --config php"
