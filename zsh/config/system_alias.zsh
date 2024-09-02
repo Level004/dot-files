@@ -25,6 +25,10 @@ alias nginxr="sudo systemctl restart nginx"
 alias nginxs="sudo systemctl status nginx"
 alias ubuntu="ssh ubuntu-stage"
 
+alias art="php artisan"
+alias artdefault="art defaults -f"
+alias dbreset="php artisan migrate:fresh && php artisan db:seed"
+
 alias upd="sudo apt update && sudo apt upgrade -y && sudo apt autoclean"
 alias sai="sudo apt install"
 alias sclock="xscreensaver-command --lock"
@@ -34,3 +38,4 @@ alias fullbuild="env && npm i && composer i && npm run dev && sudo chmod 777 -R 
 alias fresh="rm -rf node_modues && npm i && npm run dev"
 alias env="cp .env.example .env"
 alias search="history | grep"
+alias phpversion="sudo update-alternatives --config php"

@@ -23,3 +23,24 @@ function activatefolder ()
   local base_name=$(basename "$PWD")
   cd "$base_name/Scripts/" && . activate && cd ..
 }
+
+function nginxadd ()
+{
+    sudo ln -s /etc/nginx/sites-available/"$1" /etc/nginx/sites-enabled/"$1"
+}
+
+function nginxedit()
+{
+    sudo nvim /etc/nginx/sites-available/"$1"
+}
+
+function activatefolder () 
+{
+    local base_name=$(basename "$PWD")
+    cd "$base_name/Scripts/" && . activate && ..
+}
+
+function createdbfromsql () 
+{
+    sudo mariadb -p -e"CREATE DATABASE "$1";" &&  sudo mariadb -u root -p "$1" < "$2"
+}
