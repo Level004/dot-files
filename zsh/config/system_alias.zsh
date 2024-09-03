@@ -39,3 +39,5 @@ alias fresh="rm -rf node_modues && npm i && npm run dev"
 alias env="cp .env.example .env"
 alias search="history | grep"
 alias phpversion="sudo update-alternatives --config php"
+
+alias makevenv="python -m venv venv"
