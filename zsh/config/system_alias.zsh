@@ -38,7 +38,6 @@ alias fullbuild="env && npm i && composer i && npm run dev && sudo chmod 777 -R 
 alias fresh="rm -rf node_modues && npm i && npm run dev"
 alias env="cp .env.example .env"
 alias search="history | grep"
-alias phpversion="sudo update-alternatives --config php"
 
 alias makevenv="python -m venv venv"
 alias phpversion="sudo update-alternatives --config php"
