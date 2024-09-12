@@ -34,12 +34,6 @@ function nginxedit()
     sudo nvim /etc/nginx/sites-available/"$1"
 }
 
-function activatefolder () 
-{
-    local base_name=$(basename "$PWD")
-    cd "$base_name/Scripts/" && . activate && ..
-}
-
 function createdbfromsql () 
 {
     sudo mariadb -p -e"CREATE DATABASE "$1";" &&  sudo mariadb -u root -p "$1" < "$2"
@@ -56,4 +50,10 @@ git branch -r \
     git fetch --all
     git pull --all
 }
+
+function sad () 
+{
+    sudo apt remove $1 && sudo apt autoremove -y
+}
+
 
